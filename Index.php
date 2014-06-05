@@ -14,8 +14,10 @@ if( isset($_POST['message']) ) {
 	    'Accept: application/json',
 	    'Content-Type: application/json'
 	    ));	
+	$json = "{ \"Text\": \"".$_POST['message']."\" }";
+	echo $json;
 	 
-	curl_setopt($ch,CURLOPT_POSTFIELDS, "{ \"Text\": \"".$_POST['message']."\" }");
+	curl_setopt($ch,CURLOPT_POSTFIELDS, $json);
 	// Get the response and close the channel.
 	$response = curl_exec($ch);
 	curl_close($ch);
