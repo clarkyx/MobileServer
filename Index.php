@@ -2,7 +2,7 @@
  
 if( isset($_POST['message']) ) {
  
-	$endpoint = "https://YOUR-MOBILE-SERVICE-NAME.azure-mobile.net/tables/Messages";
+	$endpoint = "https://clarktodolist.azure-mobile.net/tables/Messages";
 	 
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $endpoint);
@@ -12,7 +12,7 @@ if( isset($_POST['message']) ) {
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	 
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-	    'X-ZUMO-APPLICATION: YOUR KEY HERE',
+	    'X-ZUMO-APPLICATION: MIajyClrhzybAIQfCAheCzhgmhxAYC49',
 	    'Accept: application/json',
 	    'Content-Type: application/json',
 	    ));	
