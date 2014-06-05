@@ -2,7 +2,7 @@
  
 if( isset($_POST['message']) ) {
  
-	$endpoint = "https://clarktodolist.azure-mobile.net/tables/Messages";
+	$endpoint = "https://clarktodolist.azure-mobile.net/tables/Devices";
 	 
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $endpoint);
@@ -32,5 +32,5 @@ if( isset($_POST['message']) ) {
  
 <form method="post" action="messages.php">
 <textarea name="message"></textarea>
-<input type="submit" value="Invia"/>
+<input type="submit" value="TryOut"/>
 </form>
