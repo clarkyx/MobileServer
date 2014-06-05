@@ -3,7 +3,8 @@
 if( isset($_POST['message']) ) {
  
 	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL, "https://clarktodolist.azure-mobile.net/tables/TodoItem");
+	$site = "https://clarktodolist.azure-mobile.net/tables/TodoItem"
+	curl_setopt($ch, CURLOPT_URL, $site);
 	 
 	// Set so curl_exec returns the result instead of outputting it.
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
