@@ -2,7 +2,7 @@
  
 if( isset($_POST['message']) ) {
  
-	$endpoint = "https://clarktodlist.azure-mobile.net/tables/Devices";
+	$endpoint = "https://clarktodlist.azure-mobile.net/tables/TodoItem";
 	 
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $endpoint);
