@@ -2,10 +2,8 @@
  
 if( isset($_POST['message']) ) {
  
-	$endpoint = "https://clarktodolist.azure-mobile.net/tables/TodoItem";
-	 
 	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL, $endpoint);
+	curl_setopt($ch, CURLOPT_URL, "https://clarktodolist.azure-mobile.net/tables/TodoItem");
 	 
 	// Set so curl_exec returns the result instead of outputting it.
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
