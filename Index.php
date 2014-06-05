@@ -10,7 +10,7 @@ if( isset($_POST['message']) ) {
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	 
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-	    'X-ZUMO-APPLICATION: MIajyClrhzybAIQfCAheCzhgmhxAYC49',
+	    'X-ZUMO-APPLICATION: qjbIhxEMUedqTXYNiFkIsqBmBTWrfK42',
 	    'Accept: application/json',
 	    'Content-Type: application/json'
 	    ));	
