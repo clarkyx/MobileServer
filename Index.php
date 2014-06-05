@@ -12,7 +12,7 @@ if( isset($_POST['message']) ) {
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 	    'X-ZUMO-APPLICATION: MIajyClrhzybAIQfCAheCzhgmhxAYC49',
 	    'Accept: application/json',
-	    'Content-Type: application/json',
+	    'Content-Type: application/json'
 	    ));	
 	 
 	$json = "{ \"Text\": \"".$_POST['message']."\" }";
