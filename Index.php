@@ -16,7 +16,7 @@ if( isset($_POST['message']) ) {
 	    'Content-Type: application/json'
 	    ));	
 	    
-	$json = "{ \"Text\": \"".$_POST['message']."\" }";
+	$json = "{ \"text\": \"".$_POST['message']."\" }";
 	echo $json;
 	 
 	curl_setopt($ch,CURLOPT_POSTFIELDS, $json);
