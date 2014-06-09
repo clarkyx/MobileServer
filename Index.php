@@ -29,7 +29,7 @@ if( isset($_POST['message']) ) {
  
 ?>
  
-<form method="post" action="messages.php">
+<form method="post" action="Index.php">
 <textarea name="message"></textarea>
 <input type="submit" value="TryOut"/>
 </form>
